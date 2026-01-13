@@ -1,0 +1,146 @@
+.ship-management {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ship-management h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.75rem;
+}
+
+.ship-management h3 {
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 1.25rem;
+}
+
+.message {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.ship-management-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.ships-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.ship-card {
+  background: #f8f9fa;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+}
+
+.ship-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.ship-details {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.ship-details div {
+  margin: 0.25rem 0;
+}
+
+.btn-buy {
+  width: 100%;
+  padding: 0.75rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-buy:hover:not(.disabled) {
+  background: #5568d3;
+}
+
+.btn-buy.disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.user-ships {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.user-ship-card {
+  background: #f8f9fa;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+}
+
+.user-ship-info {
+  margin-bottom: 1rem;
+}
+
+.user-ship-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.user-ship-details {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.user-ship-area {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.user-ship-area .not-assigned {
+  color: #999;
+  font-style: italic;
+}
+
+.ship-assign select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .ship-management-grid {
+    grid-template-columns: 1fr;
+  }
+}

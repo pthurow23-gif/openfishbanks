@@ -1,0 +1,256 @@
+.earnings-report {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.earnings-report h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.75rem;
+}
+
+.earnings-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.earnings-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.earnings-label {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.earnings-value {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+}
+
+.earnings-value.positive {
+  color: #4caf50;
+}
+
+.earnings-value.negative {
+  color: #f44336;
+}
+
+.last-transaction {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #e9ecef;
+}
+
+.last-transaction h3 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.transaction-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-weight: 500;
+  color: #666;
+}
+
+.detail-value {
+  font-weight: 600;
+  color: #333;
+}
+
+.detail-value.positive {
+  color: #4caf50;
+}
+
+.detail-value.negative {
+  color: #f44336;
+}
+
+.no-transactions {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-style: italic;
+}
+
+.transaction-history {
+  margin-top: 2rem;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.history-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.toggle-history-btn {
+  padding: 0.5rem 1rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.toggle-history-btn:hover {
+  background: #5568d3;
+}
+
+.ticks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tick-group {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.tick-group.recent {
+  background: #fff;
+  border-color: #667eea;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+}
+
+.tick-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.tick-header:hover {
+  background: rgba(102, 126, 234, 0.05);
+}
+
+.tick-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.tick-time {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.tick-total {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.tick-total.positive {
+  color: #4caf50;
+}
+
+.tick-total.negative {
+  color: #f44336;
+}
+
+.tick-count {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.expand-icon {
+  color: #667eea;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.tick-transactions {
+  padding: 0 1.5rem 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border-top: 1px solid #e9ecef;
+  padding-top: 1rem;
+}
+
+.transaction-item {
+  background: white;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.transaction-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.transaction-area {
+  font-weight: 600;
+  color: #333;
+}
+
+.transaction-profit {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.transaction-profit.positive {
+  color: #4caf50;
+}
+
+.transaction-profit.negative {
+  color: #f44336;
+}
+
+.transaction-details-small {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #666;
+  align-items: center;
+}

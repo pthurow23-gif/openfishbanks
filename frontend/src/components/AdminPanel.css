@@ -1,0 +1,514 @@
+.admin-panel {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.admin-panel h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.75rem;
+}
+
+.admin-panel h3 {
+  margin-bottom: 1.5rem;
+  color: #555;
+  font-size: 1.5rem;
+}
+
+.admin-message {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.admin-message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.admin-message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.admin-controls {
+  margin-bottom: 2rem;
+}
+
+.admin-navigation {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  background: white;
+  padding: 0.75rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-nav-item {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.admin-nav-item:hover {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.admin-nav-item.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+}
+
+.btn-admin {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-admin:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-admin:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.create-area-form {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #e9ecef;
+  margin-bottom: 2rem;
+}
+
+.create-area-form h4 {
+  margin: 0 0 1rem 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.create-area-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.create-area-grid > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-area-grid label {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.create-area-grid input,
+.create-area-grid select {
+  padding: 0.5rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.create-area-grid input:focus,
+.create-area-grid select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.admin-area-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #e9ecef;
+}
+
+.area-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.area-header h4 {
+  margin: 0;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.area-type {
+  background: #667eea;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.area-info {
+  margin-bottom: 1.5rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.info-label {
+  font-weight: 500;
+  color: #666;
+}
+
+.info-value {
+  font-weight: 600;
+  color: #333;
+}
+
+.stock-value {
+  color: #4caf50;
+}
+
+.area-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.action-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-group input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.btn-action {
+  padding: 0.5rem 1rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-action:hover:not(:disabled) {
+  background: #5568d3;
+}
+
+.btn-action:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-cancel {
+  background: #6c757d;
+}
+
+.btn-cancel:hover {
+  background: #5a6268;
+}
+
+.edit-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.edit-controls input {
+  padding: 0.5rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.edit-controls .btn-action {
+  width: 100%;
+}
+
+.admin-clans {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.admin-clans h3 {
+  margin-bottom: 1.5rem;
+  color: #555;
+  font-size: 1.5rem;
+}
+
+.clans-list-admin {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin-clan-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+}
+
+.admin-clan-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.admin-clan-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.admin-clan-members {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.btn-delete-clan {
+  padding: 0.75rem 1.5rem;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-delete-clan:hover:not(:disabled) {
+  background: #c0392b;
+}
+
+.btn-delete-clan:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.admin-ships {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.ships-admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.admin-ship-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+}
+
+.admin-ship-info {
+  flex: 1;
+}
+
+.admin-ship-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.admin-ship-details {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.edit-ship-cost {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.edit-ship-cost input {
+  padding: 0.5rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  width: 150px;
+}
+
+.btn-cancel {
+  background: #6c757d !important;
+}
+
+.btn-cancel:hover:not(:disabled) {
+  background: #5a6268 !important;
+}
+
+.admin-users {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.admin-users h3 {
+  margin-bottom: 1.5rem;
+  color: #555;
+  font-size: 1.5rem;
+}
+
+.users-list-admin {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin-user-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+}
+
+.admin-user-info {
+  margin-bottom: 1rem;
+}
+
+.admin-user-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.admin-user-stats {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.admin-user-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.action-group-small {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-group-small input,
+.action-group-small select {
+  flex: 1;
+  padding: 0.5rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+.btn-action-small {
+  padding: 0.5rem 1rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-action-small:hover:not(:disabled) {
+  background: #5568d3;
+}
+
+.btn-action-small:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .areas-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .admin-clan-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .btn-delete-clan {
+    width: 100%;
+  }
+  
+  .admin-user-item {
+    padding: 1rem;
+  }
+  
+  .admin-user-actions {
+    gap: 0.5rem;
+  }
+  
+  .action-group-small {
+    flex-direction: column;
+  }
+  
+  .btn-action-small {
+    width: 100%;
+  }
+}
